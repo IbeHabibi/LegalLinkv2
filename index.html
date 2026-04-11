@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legal Link</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background: #1e3a5f;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Language selector in nav */
+nav select.nav-language-select {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 20px;
+    height: 38px;
+}
+
+/* Language selector options */
+nav select.nav-language-select option {
+    background-color: white;
+    color: #1e3a5f;
+}
+
+/* Responsive adjustments for language selector */
+@media (max-width: 768px) {
+    nav select.nav-language-select {
+        margin-left: 10px;
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav select.nav-language-select {
+        margin-left: 8px;
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}
+
+.hero {
+    background: linear-gradient(to right, #1e3a5f, #3b82f6);
+    color: white;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero button {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background: #22c55e;
+    color: white;
+}
+
+.secondary-btn {
+    background: white;
+    color: #1e3a5f;
+}
+
+.section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.step {
+    background: white;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+}
+
+.pricing {
+    background: #e0f2fe;
+    padding: 60px;
+}
+
+.price-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.footer {
+    background: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Legal Link</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <select id="language-select" class="nav-language-select">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="ar">Arabic</option>
+            <option value="zh">Chinese</option>
+        </select>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h2>Clear, Affordable Legal Guidance for Everyone</h2>
+    <p>Get help understanding legal forms and processes from trained students and affordable attorneys.</p>
+    <button class="primary-btn">Get Started</button>
+    <button class="secondary-btn">Log In</button>
+</section>
+
+<section class="section">
+    <h2>The Problem</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Complex Paperwork</h3>
+            <p>Legal forms are confusing and mistakes can have serious consequences.</p>
+        </div>
+        <div class="card">
+            <h3>High Costs</h3>
+            <p>Traditional attorneys cost hundreds per hour—unaffordable for many.</p>
+        </div>
+        <div class="card">
+            <h3>Lack of Guidance</h3>
+            <p>Many people face legal challenges alone without support.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Our Solution</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Student Guidance</h3>
+            <p>Pre-law students explain forms and guide you step-by-step.</p>
+        </div>
+        <div class="card">
+            <h3>Attorney Support</h3>
+            <p>Affordable attorneys help with complex legal situations.</p>
+        </div>
+        <div class="card">
+            <h3>Community Education</h3>
+            <p>Workshops and seminars empower communities.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+        <div class="step">
+            <h3>1. Sign Up</h3>
+            <p>Create an account and set your preferences.</p>
+        </div>
+        <div class="step">
+            <h3>2. Get Matched</h3>
+            <p>We connect you with the best helper.</p>
+        </div>
+        <div class="step">
+            <h3>3. Connect</h3>
+            <p>Chat, call, or share documents securely.</p>
+        </div>
+        <div class="step">
+            <h3>4. Ongoing Support</h3>
+            <p>Get help until your issue is resolved.</p>
+        </div>
+    </div>
+</section>
+
+<section class="pricing" id="pricing">
+    <h2>Affordable Pricing</h2>
+    <div class="price-box">
+        <h3>$29/month</h3>
+        <p>Unlimited student help</p>
+        <p>2 hours of attorney support</p>
+        <p>Free seminars</p>
+        <button class="primary-btn">Subscribe</button>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Our Impact</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>2,500+</h3>
+            <p>Clients Served</p>
+        </div>
+        <div class="card">
+            <h3>92%</h3>
+            <p>Success Rate</p>
+        </div>
+        <div class="card">
+            <h3>500+</h3>
+            <p>Student Volunteers</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Get Involved</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Need Help?</h3>
+            <button class="primary-btn">Get Started</button>
+        </div>
+        <div class="card">
+            <h3>Volunteer</h3>
+            <button class="primary-btn">Join Us</button>
+        </div>
+        <div class="card">
+            <h3>Partner</h3>
+            <button class="primary-btn">Connect</button>
+        </div>
+    </div>
+</section>
+
+<section class="footer" id="contact">
+    <p>Contact: info@legallink.org</p>
+    <p>Because justice shouldn't depend on your income.</p>
+</section>
+
+<script>
+    // Simple translation object for demonstration
+    const translations = {
+        en: {
+            "Legal Access": "Legal Link",
+            "Home": "Home",
+            "How It Works": "How It Works",
+            "Pricing": "Pricing",
+            "Contact": "Contact",
+            "Clear, Affordable Legal Guidance for Everyone": "Clear, Affordable Legal Guidance for Everyone",
+            "Get help understanding legal forms and processes from trained students and affordable attorneys.": "Get help understanding legal forms and processes from trained students and affordable attorneys.",
+            "Get Started": "Get Started",
+            "Log In": "Log In",
+            "The Problem": "The Problem",
+            "Complex Paperwork": "Complex Paperwork",
+            "Legal forms are confusing and mistakes can have serious consequences.": "Legal forms are confusing and mistakes can have serious consequences.",
+            "High Costs": "High Costs",
+            "Traditional attorneys cost hundreds per hour—unaffordable for many.": "Traditional attorneys cost hundreds per hour—unaffordable for many.",
+            "Lack of Guidance": "Lack of Guidance",
+            "Many people face legal challenges alone without support.": "Many people face legal challenges alone without support.",
+            "Our Solution": "Our Solution",
+            "Student Guidance": "Student Guidance",
+            "Pre-law students explain forms and guide you step-by-step.": "Pre-law students explain forms and guide you step-by-step.",
+            "Attorney Support": "Attorney Support",
+            "Affordable attorneys help with complex legal situations.": "Affordable attorneys help with complex legal situations.",
+            "Community Education": "Community Education",
+            "Workshops and seminars empower communities.": "Workshops and seminars empower communities.",
+            "How It Works": "How It Works",
+            "Sign Up": "Sign Up",
+            "Create an account and set your preferences.": "Create an account and set your preferences.",
+            "Get Matched": "Get Matched",
+            "We connect you with the best helper.": "We connect you with the best helper.",
+            "Connect": "Connect",
+            "Chat, call, or share documents securely.": "Chat, call, or share documents securely.",
+            "Ongoing Support": "Ongoing Support",
+            "Get help until your issue is resolved.": "Get help until your issue is resolved.",
+            "Affordable Pricing": "Affordable Pricing",
+            "$29/month": "$29/month",
+            "Unlimited student help": "Unlimited student help",
+            "2 hours of attorney support": "2 hours of attorney support",
+            "Free seminars": "Free seminars",
+            "Subscribe": "Subscribe",
+            "Our Impact": "Our Impact",
+            "Clients Served": "Clients Served",
+            "Success Rate": "Success Rate",
+            "Student Volunteers": "Student Volunteers",
+            "Get Involved": "Get Involved",
+            "Need Help?": "Need Help?",
+            "Volunteer": "Volunteer",
+            "Partner": "Partner",
+            "Contact: info@legalaccess.org": "Contact: info@legalaccess.org",
+            "Because justice shouldn't depend on your income.": "Because justice shouldn't depend on your income."
+        },
+        es: {
+             "Legal Access": "Enlace Legal",
+            "Home": "Inicio",
+            "How It Works": "Cómo Funciona",
+            "Pricing": "Precios",
+            "Contact": "Contacto",
+            "Clear, Affordable Legal Guidance for Everyone": "Orientación Legal Clara y Asequible para Todos",
+            "Get help understanding legal forms and processes from trained students and affordable attorneys.": "Obtenga ayuda para comprender formularios y procesos legales de estudiantes capacitados y abogados asequibles.",
+            "Get Started": "Empezar",
+            "Log In": "Iniciar Sesión",
+            "The Problem": "El Problema",
+            "Complex Paperwork": "Trámites Complejos",
+            "Legal forms are confusing and mistakes can have serious consequences.": "Los formularios legales son confusos y los errores pueden tener consecuencias graves.",
+            "High Costs": "Altos Costos",
+            "Traditional attorneys cost hundreds per hour—unaffordable for many.": "Los abogados tradicionales cobran cientos por hora—inaccesible para muchos.",
+            "Lack of Guidance": "Falta de Orientación",
+            "Many people face legal challenges alone without support.": "Muchas personas enfrentan desafíos legales solas sin apoyo.",
+            "Our Solution": "Nuestra Solución",
+            "Student Guidance": "Orientación Estudiantil",
+            "Pre-law students explain forms and guide you step-by-step.": "Los estudiantes de pre-derecho explican formularios y lo guían paso a paso.",
+            "Attorney Support": "Apoyo Legal",
+            "Affordable attorneys help with complex legal situations.": "Abogados asequibles ayudan con situaciones legales complejas.",
+            "Community Education": "Educación Comunitaria",
+            "Workshops and seminars empower communities.": "Los talleres y seminarios empoderan a las comunidades.",
+            "How It Works": "Cómo Funciona",
+            "Sign Up": "Regístrarse",
+            "Create an account and set your preferences.": "Cree una cuenta y establezca sus preferencias.",
+            "Get Matched": "Emparejado",
+            "We connect you with the best helper.": "Lo conectamos con el mejor ayudante.",
+            "Connect": "Conectar",
+            "Chat, call, or share documents securely.": "Chatee, llame o comparta documentos de forma segura.",
+            "Ongoing Support": "Soporte Continuo",
+            "Get help until your issue is resolved.": "Obtenga ayuda hasta que se resuelva su problema.",
+            "Affordable Pricing": "Precios Asequibles",
+            "$29/month": "$29/mes",
+            "Unlimited student help": "Ayuda estudiantil ilimitada",
+            "2 hours of attorney support": "2 horas de apoyo legal",
+            "Free seminars": "Seminarios gratuitos",
+            "Subscribe": "Suscríbase",
+            "Our Impact": "Nuestro Impacto",
+            "Clients Served": "Clientes Atendidos",
+            "Success Rate": "Tasa de Éxito",
+            "Student Volunteers": "Voluntarios Estudiantiles",
+            "Get Involved": "Participar",
+            "Need Help?": "¿Necesita Ayuda?",
+            "Volunteer": "Voluntario",
+            "Partner": "Socio",
+            "Contact: info@legalaccess.org": "Contacto: info@legalaccess.org",
+            "Because justice shouldn't depend on your income.": "Porque la justicia no debería depender de sus ingresos."
+        },
+        ar: {
+             "Legal Access": "الرابط القانوني",
+            "Home": "الصفحة الرئيسية",
+            "How It Works": "كيف يعمل",
+            "Pricing": "الأسعار",
+            "Contact": "اتصل بنا",
+            "Clear, Affordable Legal Guidance for Everyone": "توجيه قانوني واضح وميسور للجميع",
+            "Get help understanding legal forms and processes from trained students and affordable attorneys.": "احصل على المساعدة لفهم النماذج والإجراءات القانونية من طلاب مدربين ومحامين بأسعار معقولة.",
+            "Get Started": "ابدأ الآن",
+            "Log In": "تسجيل الدخول",
+            "The Problem": "المشكلة",
+            "Complex Paperwork": "الأوراق المعقدة",
+            "Legal forms are confusing and mistakes can have serious consequences.": "النماذج القانونية مربكة والأخطاء يمكن أن تكون لها عواقب خطيرة.",
+            "High Costs": "التكاليف العالية",
+            "Traditional attorneys cost hundreds per hour—unaffordable for many.": "يتكلف المحامون التقليديون مئات الدولارات في الساعة—غير ميسور للعديد من الأشخاص.",
+            "Lack of Guidance": "نقص التوجيه",
+            "Many people face legal challenges alone without support.": "يواجه كثير من الناس التحديات القانونية وحدهم دون دعم.",
+            "Our Solution": "حلنا",
+            "Student Guidance": "توجيه الطلاب",
+            "Pre-law students explain forms and guide you step-by-step.": "يشرح طلاب ما قبل القانون النماذج ويوجهونك خطوة بخطوة.",
+            "Attorney Support": "دعم المحامين",
+            "Affordable attorneys help with complex legal situations.": "المحامون بأسعار معقولة يساعدون في المواقف القانونية المعقدة.",
+            "Community Education": "التعليم المجتمعي",
+            "Workshops and seminars empower communities.": "الورش والندوات تمكّن المجتمعات.",
+            "How It Works": "كيف يعمل",
+            "Sign Up": "الاشتراك",
+            "Create an account and set your preferences.": "أنشئ حسابًا وضبط تفضيلاتك.",
+            "Get Matched": "التوافق",
+            "We connect you with the best helper.": "نحن نربطك بأفضل مساعد.",
+            "Connect": "الاتصال",
+            "Chat, call, or share documents securely.": "الدردشة، المكالمة، أو مشاركة المستندات بأمان.",
+            "Ongoing Support": "الدعم المستمر",
+            "Get help until your issue is resolved.": "احصل على المساعدة حتى يتم حل مشكلتك.",
+            "Affordable Pricing": "الأسعار المعقولة",
+            "$29/month": "29 دولارًا/شهرًا",
+            "Unlimited student help": "مساعدة طلابية غير محدودة",
+            "2 hours of attorney support": "ساعتين من دعم المحامين",
+            "Free seminars": "ندوات مجانية",
+            "Subscribe": "الاشتراك",
+            "Our Impact": "أثرنا",
+            "Clients Served": "العملاء المُخدمون",
+            "Success Rate": "معدل النجاح",
+            "Student Volunteers": "متطوعون طلابيون",
+            "Get Involved": "انضم",
+            "Need Help?": "هل تحتاج مساعدة؟",
+            "Volunteer": "متطوع",
+            "Partner": "شريك",
+            "Contact: info@legalaccess.org": "اتصل: info@legalaccess.org",
+            "Because justice shouldn't depend on your income.": "لأن العدالة لا ينبغي أن تعتمد على دخلك."
+        },
+        zh: {
+             "Legal Access": "法律链接",
+            "Home": "主页",
+            "How It Works": "如何运作",
+            "Pricing": "定价",
+            "Contact": "联系我们",
+            "Clear, Affordable Legal Guidance for Everyone": "人人皆享的清晰、经济实惠的法律指导",
+            "Get help understanding legal forms and processes from trained students and affordable attorneys.": "从受过培训的学生和价格亲民的律师那里获得帮助，以理解法律表格和流程。",
+            "Get Started": "开始使用",
+            "Log In": "登录",
+            "The Problem": "问题",
+            "Complex Paperwork": "复杂的文书工作",
+            "Legal forms are confusing and mistakes can have serious consequences.": "法律文件令人困惑，错误可能导致严重后果。",
+            "High Costs": "高昂费用",
+            "Traditional attorneys cost hundreds per hour—unaffordable for many.": "传统律师每小时收费几百美元——对许多人来说负担不起。",
+            "Lack of Guidance": "缺乏指导",
+            "Many people face legal challenges alone without support.": "许多人独自面对法律挑战，缺乏支持。",
+            "Our Solution": "我们的解决方案",
+            "Student Guidance": "学生指导",
+            "Pre-law students explain forms and guide you step-by-step.": "法律专业学生解释表格并逐步指导您。",
+            "Attorney Support": "律师支持",
+            "Affordable attorneys help with complex legal situations.": "价格亲民的律师帮助处理复杂的法律情况。",
+            "Community Education": "社区教育",
+            "Workshops and seminars empower communities.": "研讨会和讲座使社区得到赋能。",
+            "How It Works": "如何运作",
+            "Sign Up": "注册",
+            "Create an account and set your preferences.": "创建账户并设置您的偏好。",
+            "Get Matched": "匹配",
+            "We connect you with the best helper.": "我们将您与最佳帮助者联系起来。",
+            "Connect": "连接",
+            "Chat, call, or share documents securely.": "聊天、通话或安全共享文档。",
+            "Ongoing Support": "持续支持",
+            "Get help until your issue is resolved.": "获得帮助直到您的问题得到解决。",
+            "Affordable Pricing": "平价定价",
+            "$29/month": "29美元/月",
+            "Unlimited student help": "无限学生帮助",
+            "2 hours of attorney support": "2小时律师支持",
+            "Free seminars": "免费研讨会",
+            "Subscribe": "订阅",
+            "Our Impact": "我们的影响",
+            "Clients Served": "服务客户数",
+            "Success Rate": "成功率",
+            "Student Volunteers": "学生志愿者",
+            "Get Involved": "参与进来",
+            "Need Help?": "需要帮助？",
+            "Volunteer": "志愿者",
+            "Partner": "合作伙伴",
+            "Contact: info@legalaccess.org": "联系方式：info@legalaccess.org",
+            "Because justice shouldn't depend on your income.": "因为正义不应取决于您的收入。"
+        }
+    };
+
+    // Function to translate the page
+    function translatePage(language) {
+        const translation = translations[language] || translations.en;
+        
+        // Translate text content of elements
+        document.querySelectorAll('h1, h2, h3, p, a, button, li, label, span').forEach(element => {
+            // Get original text from data attribute or use current text if not set
+            let originalText = element.getAttribute('data-original-text');
+            if (!originalText) {
+                originalText = element.textContent.trim();
+                element.setAttribute('data-original-text', originalText);
+            }
+            
+            if (translation[originalText]) {
+                element.textContent = translation[originalText];
+            }
+        });
+        
+        // Translate placeholder attributes
+        document.querySelectorAll('[placeholder]').forEach(element => {
+            // Get original placeholder from data attribute or use current if not set
+            let originalPlaceholder = element.getAttribute('data-original-placeholder');
+            if (!originalPlaceholder) {
+                originalPlaceholder = element.getAttribute('placeholder').trim();
+                element.setAttribute('data-original-placeholder', originalPlaceholder);
+            }
+            
+            if (translation[originalPlaceholder]) {
+                element.setAttribute('placeholder', translation[originalPlaceholder]);
+            }
+        });
+        
+        // Translate title attribute
+        document.querySelectorAll('[title]').forEach(element => {
+            // Get original title from data attribute or use current if not set
+            let originalTitle = element.getAttribute('data-original-title');
+            if (!originalTitle) {
+                originalTitle = element.getAttribute('title').trim();
+                element.setAttribute('data-original-title', originalTitle);
+            }
+            
+            if (translation[originalTitle]) {
+                element.setAttribute('title', translation[originalTitle]);
+            }
+        });
+        
+        // Translate alt attribute for images
+        document.querySelectorAll('img[alt]').forEach(element => {
+            // Get original alt from data attribute or use current if not set
+            let originalAlt = element.getAttribute('data-original-alt');
+            if (!originalAlt) {
+                originalAlt = element.getAttribute('alt').trim();
+                element.setAttribute('data-original-alt', originalAlt);
+            }
+            
+            if (translation[originalAlt]) {
+                element.setAttribute('alt', translation[originalAlt]);
+            }
+        });
+        
+        // Update the html lang attribute
+        document.documentElement.lang = language;
+    }
+
+    // Event listener for language selector
+    document.getElementById('language-select').addEventListener('change', function(e) {
+        translatePage(e.target.value);
+    });
+
+    // Initialize with English translation on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        translatePage('en');
+    });
+</script>
+</body>
+</html>
